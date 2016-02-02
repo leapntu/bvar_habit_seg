@@ -1,0 +1,47 @@
+{
+  "experiment":"Bvar_Seg_Habit",
+
+  "stims":[
+    {
+      "id":"fams",
+      "path_type":"dir_ord",
+      "path":"./stimuli/famil/",
+      "stimuli_type":"movie"
+    },
+
+    {
+      "id":"words",
+      "path_type":"dir_ord",
+      "path":"./stimuli/words/",
+      "stimuli_type":"audio"
+    },
+
+    {
+      "id":"gets",
+      "path_type":"dir",
+      "path":"./stimuli/get/",
+      "stimuli_type":"movie_loop"
+    },
+
+    {
+      "id":"parts",
+      "path_type":"dir_ord",
+      "path":"./stimuli/part/",
+      "stimuli_type":"audio"
+    },
+
+    {
+      "id":"checker",
+      "path_type":"file",
+      "path":"./stimuli/check.jpg",
+      "stimuli_type":"image"
+    },
+
+{
+      "id":"ag",
+      "path_type":"file",
+      "path":"./stimuli/ag.wav",
+      "stimuli_type":"audio"
+    }
+  ]
+}
