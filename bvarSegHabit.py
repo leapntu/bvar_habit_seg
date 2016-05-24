@@ -221,9 +221,12 @@ def habituate(playlist):
 
   params['check'] = get_baseline
   params['start'] = clock.getTime()
-  for stimulus in playlist:
+  i = 0
+  end = len(playlist)
+  while i < end:
     if params['habituated'] == 1:
       break
+    stimulus = playlist[i]
     stimulus_filename = stimulus.filename.split('/')[-1]
     stimulus_start = clock.getTime()
     stimuli_record.append((stimulus_filename, stimulus_start))
@@ -232,6 +235,7 @@ def habituate(playlist):
       stimulus.draw()
       win.flip()
     stimuli_record.append((stimulus_filename, clock.getTime()))
+    i += 1
 
 
 def test(playlist):
@@ -247,7 +251,7 @@ def test(playlist):
     #random.shuffle(stimuli["gets"])
     getter = stimuli["gets"][0]
     mode = 'getter'
-    
+
     stimuli["ag"].play()
     while getter_done != 1:
       getter.draw()
